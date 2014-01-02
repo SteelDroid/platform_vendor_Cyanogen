@@ -374,4 +374,3 @@ CHANGELOG (notable new features or fixes)
 * EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen (2.6.32)
 * EVO: Sprint MMS fixes - Darchstar, toastcfh
 * N1/Desire: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
-* Desire: Kernel base from Kali- & Defer

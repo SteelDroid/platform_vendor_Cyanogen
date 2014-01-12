@@ -39,7 +39,7 @@ case "$1" in
          rzscontrol $DEV --stats
      else
          cd $SYSFS_PATH && for i in * ; do
-             echo -n "$i:" 
+             echo -n "$i:"
              cat $i
          done
      fi
@@ -50,4 +50,3 @@ case "$1" in
 esac
 
 exit 0
-

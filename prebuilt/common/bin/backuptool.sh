@@ -22,7 +22,7 @@ check_installscript() {
    then
       # We have an install script, and ROM versions match!
       # We now need to check and see if we have force_backup
-      # in either /etc or /tmp/backupdir 
+      # in either /etc or /tmp/backupdir
       if [ -f "$S/etc/force_backuptool" ] || [ -f "$C/force_backuptool" ];
       then
          echo "force_backuptool file found, Forcing backuptool."
@@ -47,7 +47,8 @@ app/GoogleCalendarSyncAdapter.apk
 app/GoogleContactsSyncAdapter.apk
 app/GoogleFeedback.apk
 app/GooglePartnerSetup.apk
-app/GoogleQuickSearchBox.apk app/QuickSearchBox.apk
+app/GoogleQuickSearchBox.apk
+app/QuickSearchBox.apk
 app/GoogleServicesFramework.apk
 app/googlevoice.apk
 app/HtcCopyright.apk
@@ -63,7 +64,8 @@ app/NetworkLocation.apk
 app/OneTimeInitializer.apk
 app/PassionQuickOffice.apk
 app/Quickoffice.apk
-app/SetupWizard.apk app/Provision.apk
+app/SetupWizard.apk
+app/Provision.apk
 app/soundback.apk
 app/Street.apk
 app/Talk.apk
@@ -110,9 +112,9 @@ backup_file() {
             exit $?;
          fi
       fi
-      
+
       local F=`basename $1`
-      
+
       # dont backup any apps that have odex files, they are useless
       if ( echo $F | grep -q "\.apk$" ) && [ -e `echo $1 | sed -e 's/\.apk$/\.odex/'` ];
       then

@@ -6,4 +6,3 @@ then
    logwrapper /system/bin/sh /data/firstboot.sh;
    rm -f /data/firstboot.sh;
 fi;
-

@@ -41,4 +41,3 @@ adb pull /system/etc/permissions/com.google.android.maps.xml proprietary
 adb pull /system/etc/permissions/features.xml proprietary
 adb pull /system/framework/com.google.android.maps.jar proprietary
 adb pull /system/lib/libspeech.so proprietary
-

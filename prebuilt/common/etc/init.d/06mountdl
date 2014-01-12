@@ -8,14 +8,14 @@ CACHESIZE=$(df -k /cache | tail -n1 | tr -s ' ' | cut -d ' ' -f2)
 DATAONLY=$(getprop dalvik.vm.dexopt-data-only)
 if [ "$DATAONLY" = "1" ]
 then
-  NEEDED=60000
+    NEEDED=60000
 else
-  NEEDED=105000
+    NEEDED=105000
 fi
 
 if [ $CACHESIZE -lt $NEEDED ]
 then
-  mount -o bind /data/local/download /cache/download
+    mount -o bind /data/local/download /cache/download
 fi
 
 rm /cache/download/downloadfile*.apk >/dev/null 2>&1

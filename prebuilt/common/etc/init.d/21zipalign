@@ -1,9 +1,10 @@
 #!/system/bin/sh
-# Automatic ZipAlign by Wes Garner
-# ZipAlign files in /data that have not been previously ZipAligned (using md5sum)
+# Automatic ZipAlign originally by Wes Garner
+# ZipAlign files in /system that have not been previously ZipAligned
 # Thanks to oknowton for the changes
 
 # Changelog:
+# 1.2 (1/12/14) ChevyCam94 - Now does apks on /system/ instead of /data.  More in next version
 # 1.1 (12/1/09) Switched to zipalign -c 4 to check the apk instead of MD5 (oknowton)
 # 1.0 (11/30/09) Original
 

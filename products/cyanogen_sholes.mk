@@ -20,28 +20,28 @@ PRODUCT_VERSION_DEVICE_SPECIFIC :=
 
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRG83G PRODUCT_NAME=voles TARGET_DEVICE=sholes BUILD_FINGERPRINT=verizon/voles/sholes/sholes:2.2.2/FRG83G/91102:user/release-keys PRODUCT_BRAND=verizon PRIVATE_BUILD_DESC="voles-user 2.2.2 FRG83G 91102 release-keys" BUILD_NUMBER=91102 BUILD_UTC_DATE=1294972140 TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys USER=android-build
 
-PRODUCT_COPY_FILES +=  \
+PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/sysrw:system/bin/sysrw \
     vendor/cyanogen/prebuilt/common/bin/sysro:system/bin/sysro
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/sholes
 
-# Steel Droid Gapps - /data/app/
+# Steel Droid Gapps - /system/app/ - Will move to /data/app/ during install
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sholes/gapps/Calculator.apk:/data/app/Calculator.apk \
-    vendor/motorola/sholes/gapps/Calendar.apk:/data/app/Calendar.apk \
-    vendor/motorola/sholes/gapps/Doggie.apk:/data/app/Doggie.apk \
-    vendor/motorola/sholes/gapps/Email.apk:/data/app/Email.apk \
-    vendor/motorola/sholes/gapps/LiveWallpapers.apk:/data/app/LiveWallpapers.apk \
-    vendor/motorola/sholes/gapps/MagicSmokeWallpapers.apk:/data/app/MagicSmokeWallpapers.apk \
-    vendor/motorola/sholes/gapps/Music.apk:/data/app/Music.apk \
-    vendor/motorola/sholes/gapps/MyVerizonMainAppWithDataWidget.apk:/data/app/MyVerizonMainAppWithDataWidget.apk \
-    vendor/motorola/sholes/gapps/ThemeManager.apk:/data/app/ThemeManager.apk \
-    vendor/motorola/sholes/gapps/VerizonLoginClient.apk:/data/app/VerizonLoginClient.apk \
-    vendor/motorola/sholes/gapps/VisualizationWallpapers.apk:/data/app/VisualizationWallpapers.apk \
-    vendor/motorola/sholes/gapps/VoiceDialer.apk:/data/app/VoiceDialer.apk \
-    vendor/motorola/sholes/gapps/WiredTether.apk:/data/app/WiredTether.apk \
-    vendor/motorola/sholes/gapps/WirelessTether.apk:/data/app/WirelessTether.apk
+    vendor/motorola/sholes/gapps/Calculator.apk:/system/app/Calculator.apk \
+    vendor/motorola/sholes/gapps/Calendar.apk:/system/app/Calendar.apk \
+    vendor/motorola/sholes/gapps/Doggie.apk:/system/app/Doggie.apk \
+    vendor/motorola/sholes/gapps/Email.apk:/system/app/Email.apk \
+    vendor/motorola/sholes/gapps/LiveWallpapers.apk:/system/app/LiveWallpapers.apk \
+    vendor/motorola/sholes/gapps/MagicSmokeWallpapers.apk:/system/app/MagicSmokeWallpapers.apk \
+    vendor/motorola/sholes/gapps/Music.apk:/system/app/Music.apk \
+    vendor/motorola/sholes/gapps/MyVerizonMainAppWithDataWidget.apk:/system/app/MyVerizonMainAppWithDataWidget.apk \
+    vendor/motorola/sholes/gapps/ThemeManager.apk:/system/app/ThemeManager.apk \
+    vendor/motorola/sholes/gapps/VerizonLoginClient.apk:/system/app/VerizonLoginClient.apk \
+    vendor/motorola/sholes/gapps/VisualizationWallpapers.apk:/system/app/VisualizationWallpapers.apk \
+    vendor/motorola/sholes/gapps/VoiceDialer.apk:/system/app/VoiceDialer.apk \
+    vendor/motorola/sholes/gapps/WiredTether.apk:/system/app/WiredTether.apk \
+    vendor/motorola/sholes/gapps/WirelessTether.apk:/system/app/WirelessTether.apk
 
 # Steel Droid Gapps - /system/*
 PRODUCT_COPY_FILES += \

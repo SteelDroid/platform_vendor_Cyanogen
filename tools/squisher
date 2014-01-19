@@ -4,6 +4,8 @@
 # cyanogen
 #
 
+. $ANDROID_BUILD_TOP/vendor/cyanogen/tools/functions
+
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
 then
@@ -19,7 +21,7 @@ else
 fi
 
 if [ -z "$OUT" -o ! -d "$OUT" ]; then
-    echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+    echo -e $CL_RED"ERROR: $0 only works with a full build environment. $OUT should exist."$CL_RST
     exit 1
 fi
 
@@ -29,7 +31,7 @@ else
     OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
 fi
 if [ ! -f "$OTAPACKAGE" ]; then
-    echo "$OTAPACKAGE doesn't exist!";
+    echo -e $CL_RED"$OTAPACKAGE doesn't exist!"$CL_RST;
     exit 1
 fi
 
@@ -150,15 +152,22 @@ printf "Cleaning up..."
 rm -rf $REPACK
 echo
 
-# Create a md5 checksum image of the repacked package
+# Create an md5 checksum image of the repacked package
 (
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
-$MD5 $img >$img.md5sum
-echo
-echo "Package complete: $OUTFILE"
-cat $img.md5sum
-echo
+
+$MD5 $img >$img.md5
+ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
+echo $CL_GRN"================"$CL_RST $TARGET_PRODUCT-$TARGET_BUILD_VARIANT: $CL_RED"completed"$CL_RST $CL_GRN"================"$CL_RST
+echo ""
+echo $CL_BLU"Product name:   "$CL_RST steel-droid-update.zip
+echo $CL_BLU"Package Size:    "$CL_YLW"$ZIPSIZE     " 
+echo $CL_BLU"md5:           "$CL_RST $CL_YLW" $(cat $img.md5 | awk '{ print $1 }')"$CL_RST 
+echo $CL_BLU"Target location:"$CL_RST
+echo $CL_YLW $OUTFILE $CL_RST
+echo ""
+echo ""
 )
 
 exit 0

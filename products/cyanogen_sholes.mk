@@ -24,8 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/sysrw:system/bin/sysrw \
     vendor/cyanogen/prebuilt/common/bin/sysro:system/bin/sysro
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/sholes
-
 # Steel Droid Gapps - /system/app/ - Will move to /data/app/ during install
 PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/gapps/Calculator.apk:/system/app/Calculator.apk \

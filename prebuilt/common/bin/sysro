@@ -1,2 +1,2 @@
 #! /system/bin/sh
-mount -o remount,ro -t yaffs2 /dev/block/mtdblock4 /system
+mount -o ro,remount /dev/block/mtdblock4 /system

@@ -4,9 +4,7 @@ $(call inherit-product, device/motorola/sholes/sholes.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
-#
 # Setup device specific product configuration.
-#
 PRODUCT_NAME := cyanogen_sholes
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := sholes

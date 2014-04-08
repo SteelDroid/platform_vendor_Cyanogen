@@ -43,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
-    CMScreenshot
+    CMScreenshot \
+    AccountsAndSyncSettings
 
 # Extra tools in CyanogenMod
 PRODUCT_PACKAGES += \

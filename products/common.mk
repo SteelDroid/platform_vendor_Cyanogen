@@ -51,8 +51,8 @@ PRODUCT_PACKAGES += \
     openvpn
 
 # Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/cyanogen/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+#PRODUCT_COPY_FILES += \
+#    vendor/cyanogen/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
 # Common CM overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
@@ -61,6 +61,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 include vendor/cyanogen/products/themes_common.mk
 
 PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/cyanogen/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh \
     vendor/cyanogen/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
     vendor/cyanogen/prebuilt/common/bin/zipalign:system/bin/zipalign \

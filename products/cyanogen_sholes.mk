@@ -22,20 +22,11 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/sysrw:system/bin/sysrw \
     vendor/cyanogen/prebuilt/common/bin/sysro:system/bin/sysro
 
-# Steel Droid Gapps - /system/tempgapp/ - Will move to /data/app/ during install
+# Steel Droid Gapps - 3rd party apps
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sholes/gapps/Calculator.apk:/system/tempgapps/Calculator.apk \
-    vendor/motorola/sholes/gapps/Calendar.apk:/system/tempgapps/Calendar.apk \
-    vendor/motorola/sholes/gapps/Doggie.apk:/system/tempgapps/Doggie.apk \
-    vendor/motorola/sholes/gapps/Email.apk:/system/tempgapps/Email.apk \
-    vendor/motorola/sholes/gapps/LiveWallpapers.apk:/system/tempgapps/LiveWallpapers.apk \
-    vendor/motorola/sholes/gapps/MagicSmokeWallpapers.apk:/system/tempgapps/MagicSmokeWallpapers.apk \
-    vendor/motorola/sholes/gapps/Music.apk:/system/tempgapps/Music.apk \
-    vendor/motorola/sholes/gapps/ThemeManager.apk:/system/tempgapps/ThemeManager.apk \
-    vendor/motorola/sholes/gapps/VisualizationWallpapers.apk:/system/tempgapps/VisualizationWallpapers.apk \
-    vendor/motorola/sholes/gapps/VoiceDialer.apk:/system/tempgapps/VoiceDialer.apk \
-    vendor/motorola/sholes/gapps/WiredTether.apk:/system/tempgapps/WiredTether.apk \
-    vendor/motorola/sholes/gapps/WirelessTether.apk:/system/tempgapps/WirelessTether.apk
+    vendor/motorola/sholes/gapps/Doggie.apk:/system/app/Doggie.apk \
+    vendor/motorola/sholes/gapps/WiredTether.apk:/system/app/WiredTether.apk \
+    vendor/motorola/sholes/gapps/WirelessTether.apk:/system/app/WirelessTether.apk
 
 # Steel Droid Gapps - /system/*
 PRODUCT_COPY_FILES += \

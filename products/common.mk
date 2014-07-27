@@ -3,8 +3,6 @@ PRODUCT_NAME := cyanogen
 PRODUCT_BRAND := cyanogen
 PRODUCT_DEVICE := generic
 
-PRODUCT_PACKAGES += ADWLauncher
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Used by BusyBox
@@ -20,24 +18,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=true
+    ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.startheapsize=4m \
-    dalvik.vm.heapsize=32m \
+    dalvik.vm.heapsize=24m \
     persist.sys.purgeable_assets=1 \
     ro.mot.eri.losalert.delay=1000 \
     ro.wmt.blcr.enable=0 \
     ro.kernel.checkjni=0 \
     ro.config.nocheckin=1 \
     debug.performance.tuning=1 \
-    windowsmgr.max_events_per_sec=180 \
-    dalvik.vm.verify-bytecode=false \
-    dalvik.vm.dexopt-flags=v=n,o=v,m=y \
+    windowsmgr.max_events_per_sec=50 \
     persist.sys.use_dithering=0 \
     ro.media.enc.jpeg.quality=100 \
     ro.media.dec.jpeg.memcap=20000000 \
-    ro.media.enc.hprof.vid.bps=8000000
+    ro.media.enc.hprof.vid.bps=8000000 \
+    net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
+    net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960 \
+    media.stagefright.enable-meta=true \
+    media.stagefright.enable-scan=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-record=false \
+    dalvik.vm.dexopt-flags=m=v,o=y
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
@@ -71,11 +77,13 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
     vendor/cyanogen/prebuilt/common/etc/profile:system/etc/profile \
     vendor/cyanogen/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/cyanogen/prebuilt/common/etc/init.d/00filesystem:system/etc/init.d/00filesystem \
     vendor/cyanogen/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/cyanogen/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
     vendor/cyanogen/prebuilt/common/etc/init.d/04modules:system/etc/init.d/04modules \
     vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
     vendor/cyanogen/prebuilt/common/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
+    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd \
     vendor/cyanogen/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
     vendor/cyanogen/prebuilt/common/etc/init.d/21zipalign:system/etc/init.d/21zipalign \
     vendor/cyanogen/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \

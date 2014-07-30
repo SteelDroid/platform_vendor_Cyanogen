@@ -22,7 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.startheapsize=4m \
-    dalvik.vm.heapsize=24m \
+    dalvik.vm.heapsize=32m \
     persist.sys.purgeable_assets=1 \
     ro.mot.eri.losalert.delay=1000 \
     ro.wmt.blcr.enable=0 \

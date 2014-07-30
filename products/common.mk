@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     CMScreenshot \
+    screenshot \
     AccountsAndSyncSettings
 
 # Extra tools in CyanogenMod

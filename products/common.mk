@@ -50,10 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     openvpn
 
-# Copy over the changelog to the device
-#PRODUCT_COPY_FILES += \
-#    vendor/cyanogen/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
-
 # Common CM overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 
@@ -65,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh \
     vendor/cyanogen/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
     vendor/cyanogen/prebuilt/common/bin/zipalign:system/bin/zipalign \
+    vendor/cyanogen/prebuilt/common/etc/CHANGELOG.txt:system/etc/CHANGELOG.txt \
     vendor/cyanogen/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/cyanogen/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/cyanogen/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
@@ -115,8 +112,7 @@ ifdef CYANOGEN_WITH_GOOGLE
 	-printf '%p:system/etc/permissions/%f ')
 
 else
-    PRODUCT_PACKAGES += \
-        GoogleSearch
+    # Nothing...really, nothing
 endif
 
 # Required, keyboard

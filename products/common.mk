@@ -36,7 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960 \
-    dalvik.vm.dexopt-flags=m=v,o=y
+    dalvik.vm.dexopt-flags=m=v,o=y \
+    net.webkit.cache.size=6291456
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \

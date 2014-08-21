@@ -6,4 +6,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
        vendor/cyanogen/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
-

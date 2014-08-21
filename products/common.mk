@@ -58,7 +58,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 include vendor/cyanogen/products/themes_common.mk
 
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/cyanogen/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh \
     vendor/cyanogen/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
     vendor/cyanogen/prebuilt/common/bin/zipalign:system/bin/zipalign \
@@ -86,6 +85,7 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
+#    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

@@ -16,7 +16,7 @@ PRODUCT_RELEASE_NAME := Droid
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
 -include vendor/cyanogen/products/common_versions.mk
 
-PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRG83G PRODUCT_NAME=voles TARGET_DEVICE=sholes BUILD_FINGERPRINT=verizon/voles/sholes/sholes:2.2.2/FRG83G/91102:user/release-keys PRODUCT_BRAND=verizon PRIVATE_BUILD_DESC="voles-user 2.2.2 FRG83G 91102 release-keys" BUILD_NUMBER=91102 BUILD_UTC_DATE=1294972140 TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys USER=android-build
+PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRK76 PRODUCT_NAME=voles TARGET_DEVICE=sholes BUILD_FINGERPRINT=verizon/voles/sholes/sholes:2.2.3/FRK76/185902:user/release-keys PRODUCT_BRAND=verizon PRIVATE_BUILD_DESC="voles-user 2.2.3 FRK76 185902 release-keys" BUILD_NUMBER=185902 BUILD_UTC_DATE=1316008984 TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys USER=android-build
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/sysrw:system/bin/sysrw \

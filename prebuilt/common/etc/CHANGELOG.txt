@@ -1,1 +1,5 @@
-Steel Droid Changelog:
+v13 pre10 - December 20, 2014
+
+(System UI) Initial mod for a Lollipop notification pulldown
+
+(System UI) New Material Design icons

@@ -1,5 +1,19 @@
-v13 pre10 - December 20, 2014
+v13 Final - December 21, 2014
 
-(System UI) Initial mod for a Lollipop notification pulldown
+(System) Initial mod for a Lollipop notification pulldown
 
-(System UI) New Material Design icons
+(System) New Material Design icons
+
+(System) Updated to FRK76 official props and fingerprint
+
+(System) Switched to ChevyNo1s MEDIUM VOLT kernel for compatibility
+
+(System) Reworked the Notification Power Widget to be easier to see
+
+(System) Added support for custom net cache size (defined in build.prop)
+
+(System) Touched up WiFi icons to be smoother
+
+(System) Removed useless tablet tweaks code and images
+
+(SteelBox) Removed some Tablet Tweaks not available on phones

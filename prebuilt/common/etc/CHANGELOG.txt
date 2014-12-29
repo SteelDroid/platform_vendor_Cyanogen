@@ -1,19 +1,5 @@
-v13 Final - December 21, 2014
+v13.1 - December 28, 2014
 
-(System) Initial mod for a Lollipop notification pulldown
+(Kernel) Switch to Elite Series SV kernel (250 - 1100)
 
-(System) New Material Design icons
-
-(System) Updated to FRK76 official props and fingerprint
-
-(System) Switched to ChevyNo1s MEDIUM VOLT kernel for compatibility
-
-(System) Reworked the Notification Power Widget to be easier to see
-
-(System) Added support for custom net cache size (defined in build.prop)
-
-(System) Touched up WiFi icons to be smoother
-
-(System) Removed useless tablet tweaks code and images
-
-(SteelBox) Removed some Tablet Tweaks not available on phones
+(Apps) Updated Superuser with a new material design icon

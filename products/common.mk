@@ -21,6 +21,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.execution-mode=int:jit \
+    dalvik.vm.dexopt-flags=m=y \
     dalvik.vm.startheapsize=4m \
     dalvik.vm.heapsize=32m \
     persist.sys.purgeable_assets=1 \
@@ -29,15 +31,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.checkjni=0 \
     ro.config.nocheckin=1 \
     debug.performance.tuning=1 \
-    windowsmgr.max_events_per_sec=50 \
+    windowsmgr.max_events_per_sec=60 \
     persist.sys.use_dithering=0 \
     net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960 \
-    dalvik.vm.dexopt-flags=m=v,o=y \
-    net.webkit.cache.size=6291456
+    net.webkit.cache.size=6291456 \
+    ro.compcache.default=18 \
+    ro.HOME_APP_ADJ=1 \
+    debug.sf.hw=1 \
+    pm.sleep_mode=1 \
+    video.accelerate.hw=1 \
+    ro.min_pointer_dur=8 \
+    ro.media.enc.jpeg.quality=100 \
+    ro.media.enc.hprof.vid.bps=8000000
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \

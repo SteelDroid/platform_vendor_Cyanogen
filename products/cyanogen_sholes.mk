@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/gapps/MediaProvider.apk:/system/app/MediaProvider.apk \
     vendor/motorola/sholes/gapps/MediaUploader.apk:/system/app/MediaUploader.apk \
     vendor/motorola/sholes/gapps/NetworkLocation.apk:/system/app/NetworkLocation.apk \
-    vendor/motorola/sholes/gapps/NemusLauncher.apk:/system/app/NemusLauncher.apk \
+    vendor/motorola/sholes/gapps/GoLauncherZ.apk:/system/app/GoLauncherZ.apk \
     vendor/motorola/sholes/gapps/OneTimeInitializer.apk:/system/app/OneTimeInitializer.apk \
     vendor/motorola/sholes/gapps/SetupWizard.apk:/system/app/SetupWizard.apk \
     vendor/motorola/sholes/gapps/Talk.apk:/system/app/Talk.apk \

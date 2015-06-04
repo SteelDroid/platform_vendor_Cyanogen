@@ -2,3 +2,5 @@
 mount -o remount,nodiratime,noatime /dev/block/mtdblock4 /system
 mount -o remount,nodiratime,noatime /dev/block/mtdblock5 /cache
 mount -o remount,nodiratime,noatime /dev/block/mtdblock6 /data
+
+echo 2048 > /sys/devices/virtual/bdi/179:0/read_ahead_kb

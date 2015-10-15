@@ -1,5 +1,29 @@
-v13.1 - December 28, 2014
+v14.0 - October 15, 2015
 
-(Kernel) Switch to Elite Series SV kernel (250 - 1100)
+Stagefright vulnerabilities patched!
 
-(Apps) Updated Superuser with a new material design icon
+Fixed a few memory leaks in Dalvik
+
+Fixed WiFi connection issues
+
+Fixed Launcher failing to start
+
+Removed some unused overlay images to reduce overall ROM size
+
+Removed some unused profiles
+
+Removed some unused images in source
+
+Added "dalvik.vm.allocTrackerMax" tweak option (build.prop)
+
+Backported some Dalvik commits that were created post-Android-2.3.7
+
+Rethemed the Settings menu a little
+
+Changed default clock time display from 24h to 12h (credit raidzero)
+
+Update icons with minor details
+
+LOTS of code cleanup
+
+Revised performance and battey tweaks

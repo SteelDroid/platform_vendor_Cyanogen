@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sholes/gapps/NemusLauncher.apk:/system/app/NemusLauncher.apk \
     vendor/motorola/sholes/gapps/OneTimeInitializer.apk:/system/app/OneTimeInitializer.apk \
     vendor/motorola/sholes/gapps/SetupWizard.apk:/system/app/SetupWizard.apk \
-    vendor/motorola/sholes/gapps/Talk.apk:/system/app/Talk.apk \
     vendor/motorola/sholes/gapps/Torch.apk:/system/app/Torch.apk \
     vendor/motorola/sholes/gapps/Vending.apk:/system/app/Vending.apk
 
